@@ -1,0 +1,30 @@
+// ### USAGE NOTES ###
+//
+// color: set-inverse-text-color(black)
+// will set  color: rgba(white, .875)
+
+@function set-inverse-text-color($inputColor) {
+  @if (lightness($inputColor) > 57) {
+    @return rgba(black, 0.875);
+  } @else {
+    @return rgba(white, 0.875);
+  }
+}
+
+// ### USAGE NOTES ###
+//
+// background-color: get-inverse-color(black)
+// will set  background-color: #FFF
+
+@function get-inverse-color($color) {
+  @if (lightness($color) > 50) {
+    @return darken($color, 50%);
+  } @else {
+    @return lighten($color, 50%);
+  }
+}
+
+@mixin background-color-with-text($color) {
+  background-color: $color;
+  color: set-inverse-text-color($color);
+}
