@@ -111,15 +111,15 @@
                       </a>
                     </li>
                     <li class="kss-nav__item ">
-                      <a href="section-vendor.html#kssref-vendor-semantic-loader">
+                      <a href="section-vendor.html#kssref-vendor-swimlane-datatable">
                         <span class="kss-nav__ref">10.3</span>
-                        <span class="kss-nav__name">Semantic UI 2.4.1 - Loader</span>
+                        <span class="kss-nav__name">Swimlane Datatable</span>
                       </a>
                     </li>
                     <li class="kss-nav__item ">
-                      <a href="section-vendor.html#kssref-vendor-swimlane-datatable">
+                      <a href="section-vendor.html#kssref-vendor-ui-placeholder">
                         <span class="kss-nav__ref">10.4</span>
-                        <span class="kss-nav__name">Swimlane Datatable</span>
+                        <span class="kss-nav__name">UI Placeholder</span>
                       </a>
                     </li>
                 </ul>
@@ -193,32 +193,6 @@ https://github.com/stevermeister/ngx-wig</p>
 
 
             </section>
-            <section class="kss-section kss-section--depth-2" id="kssref-vendor-semantic-loader">
-
-            <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>style/_vendor/_ui-placeholder.scss</span>, line <span>1</span></p>
-
-              <a class="kss-section__permalink" href="#kssref-vendor-semantic-loader">
-                <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">10.3</span>
-                  <span class="kss-section__name">Semantic UI 2.4.1 - Loader</span>
-                </h2>
-              </a>
-
-
-                <ul class="kss-parameters">
-                  <li class="kss-parameters__item">
-                    <p class="kss-parameters__description">
-                      Loader http://github.com/semantic-org/semantic-ui/
-
-                    </p>
-                    <code class="kss-parameters__name">Ported SCSS version of Semantic UI 2.4.1</code>
-                  </li>
-                </ul>
-            </article>
-
-
-            </section>
             <section class="kss-section kss-section--depth-2" id="kssref-vendor-swimlane-datatable">
 
             <article class="kss-section__content">
@@ -226,7 +200,7 @@ https://github.com/stevermeister/ngx-wig</p>
 
               <a class="kss-section__permalink" href="#kssref-vendor-swimlane-datatable">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">10.4</span>
+                  <span class="kss-section__ref">10.3</span>
                   <span class="kss-section__name">Swimlane Datatable</span>
                 </h2>
               </a>
@@ -237,6 +211,82 @@ https://github.com/swimlane/ngx-datatable</p>
 
             </article>
 
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-vendor-ui-placeholder">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>style/_vendor/_ui-placeholder.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-vendor-ui-placeholder">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">10.4</span>
+                  <span class="kss-section__name">UI Placeholder</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example">Will use ghost-loaders in place of progress spinners/bars
+.light {
+  $fg: #000;
+  $bar: lighten($fg, 5);
+  $bg: #fff;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}
+.dark {
+  $fg: #fff;
+  $bar: darken($fg, 25);
+  $bg: #333;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">Will use ghost-loaders in place of progress spinners/bars
+.light {
+  $fg: #000;
+  $bar: lighten($fg, 5);
+  $bg: #fff;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}
+.dark {
+  $fg: #fff;
+  $bar: darken($fg, 25);
+  $bg: #333;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}</code></pre>
+                </article>
 
             </section>
     </section>

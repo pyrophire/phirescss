@@ -1,9 +1,32 @@
-// Semantic UI 2.4.1 - Loader
+// UI Placeholder
 //
-// Ported SCSS version of Semantic UI 2.4.1 - Loader
-// http://github.com/semantic-org/semantic-ui/
+// Markup: Will use ghost-loaders in place of progress spinners/bars
+// .light {
+//   $fg: #000;
+//   $bar: lighten($fg, 5);
+//   $bg: #fff;
+//   .ui-placeholder-container {
+//     width: 100%;
+//     @include ui-placeholder($fg, $bar, $bg);
+//     .ui.placeholder {
+//       max-width: 100% !important;
+//     }
+//   }
+// }
+// .dark {
+//   $fg: #fff;
+//   $bar: darken($fg, 25);
+//   $bg: #333;
+//   .ui-placeholder-container {
+//     width: 100%;
+//     @include ui-placeholder($fg, $bar, $bg);
+//     .ui.placeholder {
+//       max-width: 100% !important;
+//     }
+//   }
+// }
 //
-// Styleguide Vendor.semantic-loader
+// Styleguide Vendor.ui-placeholder
 
 /*-------------------
       Content

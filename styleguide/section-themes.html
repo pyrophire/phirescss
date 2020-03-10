@@ -144,7 +144,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-themes-dark">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>style/_themes.scss</span>, line <span>21</span></p>
+                <p class="kss-section__source">Source: <span>style/_themes.scss</span>, line <span>22</span></p>
 
               <a class="kss-section__permalink" href="#kssref-themes-dark">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -154,7 +154,7 @@
               </a>
 
                 <div class="kss-section__description"><p>Defined primary, accent and warn colors to be used in the .dark theme.
-View source for better definition of settings.</p>
+Requires a primary, accent and warn declarations to be set inside the mat-dark-theme() function to generate Angular Material's dark theme.</p>
 </div>
 
             </article>
@@ -174,7 +174,8 @@ View source for better definition of settings.</p>
               </a>
 
                 <div class="kss-section__description"><p>Defined primary, accent and warn colors to be used in the .light theme.
-View source for better definition of settings.</p>
+Requires a primary, accent and warn declarations to be set inside the mat-light-theme() function to generate Angular Material's light theme.
+Setting it inside of the .light class will take advantage of the light/dark. If no dark theme will be provided. Unwrap the @include from the .light class</p>
 </div>
 
             </article>

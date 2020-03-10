@@ -5,7 +5,8 @@
 // Light theme
 //
 // Defined primary, accent and warn colors to be used in the .light theme.
-// View source for better definition of settings.
+// Requires a primary, accent and warn declarations to be set inside the mat-light-theme() function to generate Angular Material's light theme.
+// Setting it inside of the .light class will take advantage of the light/dark. If no dark theme will be provided. Unwrap the @include from the .light class
 //
 // Styleguide Themes.light
 
@@ -21,7 +22,7 @@ $light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
 // Dark theme
 //
 // Defined primary, accent and warn colors to be used in the .dark theme.
-// View source for better definition of settings.
+// Requires a primary, accent and warn declarations to be set inside the mat-dark-theme() function to generate Angular Material's dark theme.
 //
 // Styleguide Themes.dark
 

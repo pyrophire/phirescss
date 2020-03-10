@@ -111,25 +111,80 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-themes-light">
+            <header class="kss-section kss-section--depth-2" id="kssref-vendor-ui-placeholder">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>style/_themes.scss</span>, line <span>5</span></p>
+                <p class="kss-section__source">Source: <span>style/_vendor/_ui-placeholder.scss</span>, line <span>1</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-themes-light">
+              <a class="kss-section__permalink" href="#kssref-vendor-ui-placeholder">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">8.2</span>
-                  <span class="kss-section__name">Light theme</span>
+                  <span class="kss-section__ref">10.4</span>
+                  <span class="kss-section__name">UI Placeholder</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>Defined primary, accent and warn colors to be used in the .light theme.
-Requires a primary, accent and warn declarations to be set inside the mat-light-theme() function to generate Angular Material's light theme.
-Setting it inside of the .light class will take advantage of the light/dark. If no dark theme will be provided. Unwrap the @include from the .light class</p>
-</div>
 
             </article>
 
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example">Will use ghost-loaders in place of progress spinners/bars
+.light {
+  $fg: #000;
+  $bar: lighten($fg, 5);
+  $bg: #fff;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}
+.dark {
+  $fg: #fff;
+  $bar: darken($fg, 25);
+  $bg: #333;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">Will use ghost-loaders in place of progress spinners/bars
+.light {
+  $fg: #000;
+  $bar: lighten($fg, 5);
+  $bg: #fff;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}
+.dark {
+  $fg: #fff;
+  $bar: darken($fg, 25);
+  $bg: #333;
+  .ui-placeholder-container {
+    width: 100%;
+    @include ui-placeholder($fg, $bar, $bg);
+    .ui.placeholder {
+      max-width: 100% !important;
+    }
+  }
+}</code></pre>
+                </article>
 
             </header>
     </section>

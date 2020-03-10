@@ -1,55 +1,49 @@
+@import "style/vars";
+
 @import url("https://fonts.googleapis.com/css?family=Sen:400, 700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+
 * {
   text-shadow: none !important;
   font-family: "Sen", sans-serif;
 }
-
+// .kss-documentation {
+//   background-image: url("../ix_log.png");
+//   background-position: bottom right;
+//   background-repeat: none;
+// }
 html,
 body,
 .kss-body,
 .kss-documentation {
-  background: #3c3c3c;
-  color: rgba(255, 255, 255, 0.875);
+  background: darken($backgroundDark, 20);
+  color: set-inverse-text-color($backgroundDark);
 }
-
 .kss-navigation {
-  background: #151515;
-  color: rgba(255, 255, 255, 0.875);
+  background: darken($backgroundDark2, 20);
+  color: set-inverse-text-color($backgroundDark1);
 }
-
 .kss-section__modifiers,
 pre[class*="language-"] {
-  background: #222222;
-  color: rgba(255, 255, 255, 0.875);
+  background: darken($backgroundDark1, 20);
+  color: set-inverse-text-color($backgroundDark2);
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: $lime300;
+    font-family: "Source Code Pro", monospace;
+  }
 }
-
-.kss-section__modifiers code[class*="language-"],
-.kss-section__modifiers pre[class*="language-"],
-pre[class*="language-"] code[class*="language-"],
-pre[class*="language-"] pre[class*="language-"] {
-  color: #dce775;
-  font-family: "Source Code Pro", monospace;
-}
-
 .kss-markdown pre,
 .kss-markdown pre[class*="language-"],
 code,
 pre {
-  background: #222222;
-  color: #dce775;
+  background: darken($backgroundDark1, 20);
+  color: $lime300;
   font-family: "Source Code Pro", monospace;
-}
-
-.kss-markdown pre code,
-.kss-markdown pre pre,
-.kss-markdown pre[class*="language-"] code,
-.kss-markdown pre[class*="language-"] pre,
-code code,
-code pre,
-pre code,
-pre pre {
-  background: none;
+  code,
+  pre {
+    background: none;
+  }
 }
 
 .kss-section__source,
@@ -78,7 +72,7 @@ pre pre {
 .kss-section__description ul,
 .kss-section__description p,
 .kss-section__description a {
-  color: rgba(255, 255, 255, 0.875);
+  color: set-inverse-text-color($backgroundDark1);
   font-family: "Sen", sans-serif;
 }
 
@@ -93,7 +87,7 @@ pre pre {
 .kss-title,
 .kss-nav__item a.kss-state-active,
 .kss-nav__item a:hover {
-  color: #4fc3f7;
+  color: $light-blue300;
 }
 
 img[alt="ix_logo"] {
@@ -104,4 +98,3 @@ img[alt="ix_logo"] {
   width: 120px;
   opacity: 0.5;
 }
-/*# sourceMappingURL=main.css.map */
