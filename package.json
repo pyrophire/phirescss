@@ -1,0 +1,19 @@
+{
+  "name": "phirescss",
+  "version": "1.0.0",
+  "description": "SCSS Helpers",
+  "main": "index.js",
+  "scripts": {
+    "kss": "kss --config kss-config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://istfs:8080/tfs/DefaultCollection/IX/_git/PhireSCSS"
+  },
+  "author": "Eli",
+  "license": "MIT",
+  "devDependencies": {
+    "kss": "^3.0.0",
+    "michelangelo": "^0.8.0"
+  }
+}
