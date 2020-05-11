@@ -13,4 +13,4 @@ Copy entire *style* folder into root of app src and a refrence into each compone
 ```
 
 
-View full documentation at [https://dev-proto/phireSCSS](https://dev-proto/phireSCSS)
+View full documentation at [http://dev-proto/phireSCSS](http://dev-proto/phireSCSS)
