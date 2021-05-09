@@ -1,6 +1,6 @@
 {
   "name": "phirescss",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SCSS Helpers",
   "main": "index.js",
   "scripts": {
