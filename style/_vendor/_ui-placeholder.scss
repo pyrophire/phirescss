@@ -53,18 +53,8 @@
         color-stop(15%, rgba($fg, 0.15)),
         color-stop(30%, rgba($fg, 0.08))
       );
-      background-image: -webkit-linear-gradient(
-        left,
-        rgba($fg, 0.08) 0%,
-        rgba($fg, 0.25) 15%,
-        rgba($fg, 0.08) 30%
-      );
-      background-image: linear-gradient(
-        to right,
-        rgba($fg, 0.08) 0%,
-        rgba($fg, 0.25) 15%,
-        rgba($fg, 0.08) 30%
-      );
+      background-image: -webkit-linear-gradient(left, rgba($fg, 0.08) 0%, rgba($fg, 0.25) 15%, rgba($fg, 0.08) 30%);
+      background-image: linear-gradient(to right, rgba($fg, 0.08) 0%, rgba($fg, 0.25) 15%, rgba($fg, 0.08) 30%);
       background-size: 1200px 100%;
       max-width: 30rem;
       + .ui.placeholder {
@@ -117,7 +107,7 @@
         &:after {
           top: 100%;
           position: absolute;
-          content: "";
+          content: '';
           background-color: inherit;
         }
         &:before {
@@ -183,7 +173,7 @@
           &:after {
             display: block;
             height: 0.85714286em;
-            content: "";
+            content: '';
             margin-left: 3em;
           }
         }
@@ -199,7 +189,7 @@
       .paragraph:not(:first-child):before,
       .header:not(:first-child):before {
         height: 1.42857143em;
-        content: "";
+        content: '';
         display: block;
       }
     }
@@ -212,18 +202,8 @@
         color-stop(15%, rgba($bg, 0.14)),
         color-stop(30%, rgba($bg, 0.08))
       );
-      background-image: -webkit-linear-gradient(
-        left,
-        rgba($bg, 0.08) 0%,
-        rgba($bg, 0.14) 15%,
-        rgba($bg, 0.08) 30%
-      );
-      background-image: linear-gradient(
-        to right,
-        rgba($bg, 0.08) 0%,
-        rgba($bg, 0.14) 15%,
-        rgba($bg, 0.08) 30%
-      );
+      background-image: -webkit-linear-gradient(left, rgba($bg, 0.08) 0%, rgba($bg, 0.14) 15%, rgba($bg, 0.08) 30%);
+      background-image: linear-gradient(to right, rgba($bg, 0.08) 0%, rgba($bg, 0.14) 15%, rgba($bg, 0.08) 30%);
       background-color: $bar;
       > :before,
       .image.header:after {
