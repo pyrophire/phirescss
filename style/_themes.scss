@@ -1,4 +1,5 @@
-@import "~@angular/material/theming";
+@import '~@angular/material/theming';
+@import '~src/styles/vars';
 
 @include mat-core();
 
@@ -10,8 +11,8 @@
 //
 // Styleguide Themes.light
 
-$light-primary: mat-palette($mat-light-blue, 600);
-$light-accent: mat-palette($mat-amber, 600);
+$light-primary: mat-palette($primary-palette, $primary-shade);
+$light-accent: mat-palette($accent-palette, $accent-shade);
 $light-warn: mat-palette($mat-red, 500);
 $light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
 
@@ -26,8 +27,8 @@ $light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
 //
 // Styleguide Themes.dark
 
-$dark-primary: mat-palette($mat-light-blue, 600);
-$dark-accent: mat-palette($mat-amber, 500);
+$dark-primary: mat-palette($primary-palette, $primary-shade-dark);
+$dark-accent: mat-palette($accent-palette, $accent-shade-dark);
 $dark-warn: mat-palette($mat-red, 500);
 $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 

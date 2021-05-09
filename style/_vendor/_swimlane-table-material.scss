@@ -5,7 +5,7 @@
 //
 // Styleguide Vendor.swimlane-datatable
 
-@import "../_colors/material-color-palette";
+@import '../_colors/material-color-palette';
 
 $bg-1: #ffffff;
 $bg-2: darken($bg-1, 6.67);
@@ -25,8 +25,7 @@ $active-3: darken($active-2, 10%);
 .ngx-datatable.material {
   user-select: none;
   // background: $bg-1;
-  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 
   &.striped {
     .datatable-row-odd {
@@ -176,7 +175,7 @@ $active-3: darken($active-2, 10%);
       }
 
       .draggable::after {
-        content: " ";
+        content: ' ';
         position: absolute;
         top: 50%;
         left: 50%;
@@ -269,8 +268,7 @@ $active-3: darken($active-2, 10%);
 
         .bar {
           transition: all 0.2s linear;
-          -webkit-animation: query 0.8s infinite
-            cubic-bezier(0.39, 0.575, 0.565, 1);
+          -webkit-animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
           animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
 
           transition: -webkit-transform 0.2s linear;
@@ -385,8 +383,7 @@ $active-3: darken($active-2, 10%);
   .ngx-datatable.material {
     user-select: none;
     // background: $bg-1;
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-      0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 
     &.striped {
       .datatable-row-odd {
@@ -536,7 +533,7 @@ $active-3: darken($active-2, 10%);
         }
 
         .draggable::after {
-          content: " ";
+          content: ' ';
           position: absolute;
           top: 50%;
           left: 50%;
@@ -629,8 +626,7 @@ $active-3: darken($active-2, 10%);
 
           .bar {
             transition: all 0.2s linear;
-            -webkit-animation: query 0.8s infinite
-              cubic-bezier(0.39, 0.575, 0.565, 1);
+            -webkit-animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
             animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
 
             transition: -webkit-transform 0.2s linear;
@@ -739,7 +735,7 @@ $active-3: darken($active-2, 10%);
   box-sizing: border-box;
   padding: 0;
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     position: relative;
     margin: 0 1rem 0 0;
     cursor: pointer;
@@ -749,7 +745,7 @@ $active-3: darken($active-2, 10%);
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       z-index: 1;
@@ -770,7 +766,7 @@ $active-3: darken($active-2, 10%);
     }
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
